@@ -10,7 +10,7 @@ buttonEl.addEventListener('click',function(){
                 fetch(mailRndm)
                 .then(responce => responce.json())
                 .then(mail => {
-                    mailListEl.innerHTML += `<li>${mail.response}</li>`
+                    mailListEl.innerHTML += `<li class="list-group-item text-warning">${mail.response}</li>`
                 })
 
             }
