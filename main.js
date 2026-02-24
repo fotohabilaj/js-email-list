@@ -4,7 +4,7 @@ const buttonEl = document.querySelector('button');
 const mailListEl = document.querySelector('ul');
 
 buttonEl.addEventListener('click',function(){
-
+        mailListEl.innerHTML = ' ';
         for(let i = 0; i < 10; i++){
                 
                 fetch(mailRndm)
